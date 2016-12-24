@@ -15,7 +15,7 @@ Objective: Build an app that is functionally similar to [this](https://codepen.i
 
 ## Completed App
 
-< LINK HERE >
+[Github Pages app](https://timhandy.github.io/react-markdown-previewer/)
 
 
 ## Notable learning/features
@@ -26,7 +26,7 @@ I used an NPM module called Marked. This can be utilised via CDN and link tag in
 
 Used React for the first time.
 
-Props and State
+Props and State utilised
 
 app.js stores the state for the whole app
 
@@ -38,7 +38,9 @@ Another child component gets the updated state handed back down to it via props.
 
 Stateless Functional Components can have a shorter syntax style.
 
-Sass and media query for small screens
+Sass used. Media query for small screens
+
+Deployed to the /docs dir to allow deployment to Github Pages
 
 
 ## Notes for next time
