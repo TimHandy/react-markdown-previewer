@@ -7,17 +7,19 @@ OutputMarkup.jsx reads the state and updates the dom as each keypress happens.
 
 */
 
-let React = require('react')
-let ReactDOM = require('react-dom')
+'use strict'
+
+const React = require('react')
+const ReactDOM = require('react-dom')
 require('./css/styles.scss')
 
-let InputMarkup = require('InputMarkup')
-let OutputMarkup = require('OutputMarkup')
+const InputMarkup = require('InputMarkup')
+const OutputMarkup = require('OutputMarkup')
 
-let Main = React.createClass({
+const Main = React.createClass({
     getInitialState: function() {
         return {
-            text: ''
+            text: "Heading\n=======\n\nSub-heading\n-----------\n \n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline break\n\nText attributes *italic*, **bold**, \n`monospace`, ~~strikethrough~~ .\n\nShopping list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\n\n *[Google](https://google.com)*"
         }
     },
     handleChange: function(e) {     // the standard is for the function to be called "handle..." and when attached as props to be assigned to "on...". in this case, handleChange and onChange.
@@ -26,8 +28,8 @@ let Main = React.createClass({
     },
     render: function() {	
         return (	
-            <div id="container">
-                <h1 className="heading">Markdown Previewer</h1>
+            <div className="container">
+                
                 <div className="column" id="left-column">
                     <InputMarkup onChange={this.handleChange} textValue={this.state.text}/> {/* render InputMarkup component, the text input box */}
                 </div>

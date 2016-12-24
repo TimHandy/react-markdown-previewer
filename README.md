@@ -38,19 +38,17 @@ Another child component gets the updated state handed back down to it via props.
 
 Stateless Functional Components can have a shorter syntax style.
 
-Change to use webpack-dev-server
+Sass and media query for small screens
+
+
+## Notes for next time
+
+Changed to use webpack-dev-server
 make index.html stored in in app dir, not the src dir. The html file should be dynamically generated on running webpack.
 
 Use webpack-dev-server... creating webpack files every time is too slow
 
 
-
-## Notes for next time
-
-
-
 ## Dev
 
-let
-let
-let
+See package.json for run commands.
