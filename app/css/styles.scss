@@ -1,0 +1,43 @@
+// * {
+//     border: 1px red dashed;
+// }
+
+p {
+    margin: 0;
+}
+
+body {
+    background: pink;
+    font-family: Arial;
+    margin: 0;
+}
+
+#container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.column {
+    width: 45.4%;
+    height: 300px;
+    display: inline-block;
+    vertical-align:top;
+    border: 1px solid gray;
+    padding: 1%;
+    margin: 1%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 5em;
+}
+.sub-heading {
+    text-align: center;
+}
+
+#textInput {
+    width: 90%;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
