@@ -21,7 +21,6 @@ const InputMarkup = React.createClass({
         const textContent = this.refs.formData.value
         console.log(textContent)
     }
- 
 })
 
 module.exports = InputMarkup

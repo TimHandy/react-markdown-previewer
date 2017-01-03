@@ -4,7 +4,7 @@
   "description": "An FCC assignment to build a markdown previewer",
   "main": "app.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-register 'src/**/*.test.js' --watch",
     "dev": "webpack-dev-server",
     "build": "webpack",
     "start": "npm run build && node server.js"
@@ -24,6 +24,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.26.1",
     "html-webpack-plugin": "^2.24.1",
+    "mocha": "^3.2.0",
     "node-sass": "^4.1.1",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
