@@ -17,10 +17,10 @@ const InputMarkup = React.createClass({
         )
     },
  //custom functions
-    onTextChange: function(item) {
-        const textContent = this.refs.formData.value
-        console.log(textContent)
-    }
+    // onTextChange: function(item) {
+    //     const textContent = this.refs.formData.value
+    //     console.log(textContent)
+    // }
 })
 
 module.exports = InputMarkup

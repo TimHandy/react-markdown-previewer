@@ -22,8 +22,8 @@ const Main = React.createClass({
             text: "Heading\n=======\n\nSub-heading\n-----------\n \n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline break\n\nText attributes *italic*, **bold**, \n`monospace`, ~~strikethrough~~ .\n\nShopping list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\n\n *[Google](https://google.com)*"
         }
     },
-    handleChange: function(e) {     // the standard is for the function to be called "handle..." and when attached as props to be assigned to "on...". in this case, handleChange and onChange.
-        this.setState({text: e.target.value})   // e is for event 
+    handleChange: function(e) {     // the standard is for the function to be called "handle..." and when attached as props to be assigned to "onChange/onclick etc". in this case, handleChange and onChange.
+        this.setState({text: e.target.value})   // e is for event ... THIS IS BAD. I SHOULD USE THIS.SETSTATE HERE... THIS IS MUTATING STATE... NEEDS MODIFYING.
         //console.log(this.state.text)
     },
     render: function() {	
